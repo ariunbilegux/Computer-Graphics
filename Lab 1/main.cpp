@@ -8,13 +8,15 @@
 
 #ifdef __APPLE__
 #include <GLUT/glut.h>
-#include <window.h>
+#include <windows.h>
 #else
 #include <GL/glut.h>
 #endif
 
  
-
+#ifdef __WIN32__
+#include<windows.h>
+#endif
 
 #include <stdlib.h>
 
