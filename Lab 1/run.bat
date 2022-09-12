@@ -1,8 +1,3 @@
-echo "Clearing Workspace"
-rmdir -f dist
-
-mkdir dist
-
 echo "Compiling Graphic"
 gcc main.cpp -o main -lopengl32 -lglu32 -lfreeglut
 
