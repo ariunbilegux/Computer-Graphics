@@ -19,7 +19,6 @@ static void display(void)
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3d(0, 0, 1);
 
-    // glPointSize(10.0);
     glLineWidth(10);
     glBegin(GL_LINE_LOOP);
 
@@ -29,7 +28,7 @@ static void display(void)
     glVertex2f(-0.8, -0.4);
     glVertex2f(-0.7, -0.48);
     glVertex2f(-0.7, -0.28);
-    glVertex2f(-0.4, -0.45); // middle
+    glVertex2f(-0.4, -0.45);
     glVertex2f(-0.1, -0.28);
     glVertex2f(-0.1, -0.48);
     glVertex2f(0.0, -0.4);
@@ -37,7 +36,6 @@ static void display(void)
     glVertex2f(0.1, -0.5);
     glVertex2f(0.1, -0.8);
     glEnd();
-
 
     glPointSize(6);
     glBegin(GL_POINTS);
@@ -83,10 +81,8 @@ static void display(void)
     glVertex2f(-0.1, -0.8);
     glEnd();
 
-    // thick M
-
     glLineWidth(50);
-    // baruun hundlun
+
     glBegin(GL_QUADS);
     glVertex2f(-0.4, -0.53);
     glVertex2f(-0.15, -0.41);
@@ -94,15 +90,13 @@ static void display(void)
     glVertex2f(-0.4, -0.66);
     glEnd();
 
-    // zuun bagana bagana
     glBegin(GL_QUADS);
     glVertex2f(-0.65, -0.8);
     glVertex2f(-0.65, -0.41);
-    glVertex2f(-0.55, -0.47); // 0.07
+    glVertex2f(-0.55, -0.47);
     glVertex2f(-0.55, -0.8);
     glEnd();
 
-    // zuun hundlun
     glBegin(GL_QUADS);
     glVertex2f(-0.65, -0.41);
     glVertex2f(-0.4, -0.53);
@@ -110,7 +104,6 @@ static void display(void)
     glVertex2f(-0.62, -0.54);
     glEnd();
 
-    // baruun taliin bagana
     glBegin(GL_QUADS);
     glVertex2f(-0.15, -0.8);
     glVertex2f(-0.15, -0.41);
