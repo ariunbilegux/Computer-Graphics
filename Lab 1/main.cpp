@@ -37,11 +37,11 @@ static void display(void)
     glVertex2f(0.1, -0.5);
     glVertex2f(0.1, -0.8);
     glEnd();
-    // gonna try circle here;
+
+
     glPointSize(6);
     glBegin(GL_POINTS);
     float twoPI = 2 * M_PI;
-    // glVertex2f(-0.4, -0.365);
 
     for (float i = M_PI; i <= twoPI; i += 0.001)
         glVertex2f((cos(i) * -0.15 - 0.4), (sin(i) * -0.15 - 0.365));
@@ -85,7 +85,6 @@ static void display(void)
 
     // thick M
 
-    // gotta fix this later hha
     glLineWidth(50);
     // baruun hundlun
     glBegin(GL_QUADS);
